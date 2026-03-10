@@ -8,8 +8,8 @@
 
 <meta property="og:title" content="Mis XV Maria Jose">
 <meta property="og:description" content="Acompáñanos a celebrar este día tan especial">
-<meta property="og:image" content="https://mis-xv-maria-jose.digitalinvita.com.mx/portada-og.jpg">
-<meta property="og:url" content="https://mis-xv-maria-jose.digitalinvita.com.mx/">
+<meta property="og:image" content="https://https://mis-xv-maria-jose.digitalinvita.com.mx//portada-og.jpg">
+<meta property="og:url" content="https://https://mis-xv-maria-jose.digitalinvita.com.mx//">
 <meta property="og:type" content="website">
 
   
@@ -22,7 +22,7 @@
 
 <style>
 :root {
-  --bg-color: linear-gradient(135deg, #8b1e2d, #3a0b13);
+  --bg-color: linear-gradient(135deg, #e9eef2 0%, #c6d3df 45%, #9fb4c6 100%);
   --bg-image: none;
   --gold-text: linear-gradient(135deg, #f6d365, #fda085, #d4af37, #fff1a8);
   --gold-btn: linear-gradient(135deg, #fff1a8 0%, #f6d365 25%, #d4af37 50%, #f6d365 75%, #fff1a8 100%);
@@ -179,6 +179,8 @@ font-family: 'Playfair Display', serif;
   transform: translateY(40px);
   filter: blur(6px);
 
+white-space: nowrap;
+width: max-content;
 
 }
 
@@ -489,7 +491,6 @@ backdrop-filter: blur(18px);
   font-size: 1.6rem;
 }  
 }
-
  /* ===== COUNTDOWN FIT REAL PHONE ===== */
 .phone-mode #countdown{
   max-width:100%;
@@ -807,24 +808,24 @@ border-bottom: 7px solid transparent;
 
 
 
-/* Caja individual */
+/* Caja integrada al fondo rosa */
 .count-box {
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(14px);
-  border-radius: 20px;
-  padding: 12px 14px;
-  min-width: 74px;
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(10px);
+  border-radius: 22px;
+  padding: 14px 16px;
+  min-width: 72px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  box-shadow:
-    inset 0 1px 1px rgba(255,255,255,.25),
-    0 12px 30px rgba(0,0,0,.35);
+  border: 1px solid rgba(255,255,255,.25);
 
-  transition: transform .35s ease, box-shadow .35s ease;
+  /* sombra rosa muy suave */
+  box-shadow:
+    0 8px 20px rgba(214, 51, 132, 0.12);
 }
 
 /* Hover sutil (Apple-like) */
@@ -835,20 +836,26 @@ border-bottom: 7px solid transparent;
     0 18px 45px rgba(0,0,0,.45);
 }
 
-/* Número */
+/* Número plateado elegante */
 .count-box strong {
-  font-size: 2.7rem;
-  font-weight: 600;
+  font-size: 2.6rem;
+  font-weight: 500;
   line-height: 1;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
 
-  background: var(--gold-btn);
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f6f3ef 45%,
+    #ece7df 100%
+  );
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 
-  filter: drop-shadow(0 6px 14px rgba(255,215,160,.6));
+  text-shadow: none;
 }
-
 /* Texto (DÍAS, HORAS…) */
 .count-box span {
   margin-top: 6px;
@@ -937,7 +944,18 @@ border-bottom: 7px solid transparent;
   70% { box-shadow: 0 0 0 12px rgba(212,175,55,0); }
   100% { box-shadow: 0 0 0 0 rgba(212,175,55,0); }
 }
+.gift-img {
+  text-align: center;
+  margin-top: 12px;
+}
 
+.gift-img img {
+  width: 50%;
+  max-width: 140px;
+  height: auto;
+  display: block;
+  margin: 8px auto;
+}
 /* ================================
    FOOTER · FIRMA COMERCIAL PREMIUM
 ================================ */
@@ -1000,20 +1018,28 @@ border-bottom: 7px solid transparent;
 .marca-cta {
   display: inline-block;
   margin-top: 12px;
-  padding: 10px 24px;
+  padding: 12px 28px;
   border-radius: 40px;
   text-decoration: none;
   font-size: 14px;
-  background: linear-gradient(135deg, #7b1e3a, #a8325e);
-  color: white;
-  transition: 0.3s ease;
-  box-shadow: 0 8px 20px rgba(123, 30, 58, 0.35);
+  color: #ffffff;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
 }
 
 .marca-cta:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 25px rgba(123, 30, 58, 0.45);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
 }
+
 /* Texto superior */
 .marca-footer {
   position: relative;
@@ -1066,23 +1092,7 @@ border-bottom: 7px solid transparent;
   opacity: .8;
 }
 
-/* Botón compacto elegante */
-.marca-cta {
-  margin-top: 4px;
-  padding: 7px 20px;
-  border-radius: 25px;
-  font-size: .72rem;
-  letter-spacing: 1px;
-  text-decoration: none;
-  background: linear-gradient(135deg, #7b1e3a, #a8325e);
-  color: white;
-  transition: .3s ease;
-  box-shadow: 0 5px 15px rgba(123, 30, 58, .25);
-}
 
-.marca-cta:hover {
-  transform: translateY(-2px);
-}
 
 .rsvp-form {
   display: flex;
@@ -1793,11 +1803,24 @@ video{
     margin:0;
   }
 }
+
+.titulo-regalo {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.texto-pequeno {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 6px;
+}
+
   
 </style>
 </head>
 
-<body class="locked phone-mode">
+<body class="phone-mode">
+
 
 <div class="phone-preview">
   <div class="phone-frame"></div>
@@ -1832,8 +1855,9 @@ video{
   <div class="hero-content">
 <div class="mis-xv">Mis XV</div>
 
-<div class="nombre" id="nombre" data-text="Michelle">
-  Michelle
+<div class="nombre" id="nombre" data-text="Maria Jose">
+  Maria Jose
+
 </div>
 
 <div class="fecha-xv" id="fechaEvento"></div>
@@ -1856,31 +1880,33 @@ video{
 <div class="sep"></div>
 
 <section class="section">
-  <h2>Mi familia</h2>
+  <h2>En compañía de mis padres</h2>
   <p style="font-family:'Great Vibes',cursive;font-size:2.2rem;">
-    xxxxxx xxxxxx
+    Yolanda Luna Hernández<br>&<br>Jorge Márquez
   </p>
 </section>
+
 
 <div class="sep"></div>
 
-<section class="section">
-  <h2>Mis padrinos</h2>
+  <section class="section">
+  <h2>Padrinos</h2>
   <p style="font-family:'Great Vibes',cursive;font-size:2.2rem;">
-    Ma. del Carmen<br>&<br>Armando
+    Ana Lilia Arechavala<br>&<br>Ezequiel Luna
   </p>
 </section>
+
 
 <div class="sep"></div>
 
 <section class="section">
   <h2>Ceremonia</h2>
-  <p>17:00 hrs</p>
-  <p>Parroquia de Nuestra Señora de la Asunción</p>
+  <p>00:00 hrs</p>
+  <p>Salón Jardin La Cruz</p>
   <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14817.618557305568!2d-100.7436091!3d21.8032914!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842ac936fb835543%3A0x715293b4e598321f!2sParroquia%20de%20Nuestra%20Se%C3%B1ora%20de%20la%20Asunci%C3%B3n!5e0!3m2!1ses-419!2smx!4v1772478556097!5m2!1ses-419!2smx" width="100%" height="200" style="border:0;"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.217529429448!2d-98.92659809999999!3d19.403005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e3d66071d0e3%3A0x8afca4efe1352573!2sSal%C3%B3n%20Jardin%20La%20Cruz!5e0!3m2!1ses-419!2smx!4v1773100558478!5m2!1ses-419!2smx" width="100%" height="200" style="border:0;"></iframe>
   </div>
-  <a class="btn" href="https://maps.app.goo.gl/txoQYUjF8Wk4s6uY9" target="_blank">Cómo llegar</a>
+  <a class="btn" href="https://maps.app.goo.gl/R4x5psfkEMNwWgBu8" target="_blank">Cómo llegar</a>
 </section>
 
 <div class="sep"></div>
@@ -1889,12 +1915,11 @@ video{
   
 <section class="section">
   <h2>Recepción</h2>
-  <p>18:00 hrs</p>
-  <p>Salon de eventos Los Nogales</p>
-  <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d231.53164613376367!2d-100.73297030013924!3d21.799359015277517!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842ac9b9335eb391%3A0x37732b0f5e5851f1!2sLos%20Nogales!5e0!3m2!1ses-419!2smx!4v1772479014523!5m2!1ses-419!2smx" width="100%" height="200" style="border:0;"></iframe>
+  <p>15:30 hrs</p>
+ <div class="dresscode-img">
+    <img src="recepcion.png" alt="Código de vestimenta">
   </div>
-  <a class="btn" href="https://maps.app.goo.gl/sbJzQsYQYEAeJTD88" target="_blank">Cómo llegar</a>
+<h6>La recepción se llevará a cabo en la misma ubicación que la ceremonia.</h6>
 </section>
 
 <div class="sep"></div>
@@ -1908,33 +1933,34 @@ video{
   <div class="timeline">
 
     <div class="timeline-item">
-      <div class="timeline-time">5:00 PM</div>
+      <div class="timeline-time">00:00 hrs</div>
       <div class="timeline-title">Ceremonia</div>
-      <div class="timeline-desc">Parroquia San Juan</div>
+      <div class="timeline-desc">Salón Jardin La Cruz</div>
     </div>
 
     <div class="timeline-item">
-      <div class="timeline-time">7:00 PM</div>
+      <div class="timeline-time">15:30 hrs</div>
       <div class="timeline-title">Recepción</div>
-      <div class="timeline-desc">Salón Jardín Real</div>
+      <div class="timeline-desc">Salón Jardin La Cruz</div>
     </div>
 
     <div class="timeline-item">
-      <div class="timeline-time">8:30 PM</div>
+       <div class="timeline-time"> </div>
       <div class="timeline-title">Vals</div>
-      <div class="timeline-desc">Presentación de Sofía</div>
+      <div class="timeline-desc">Presentación de Maria Jose</div>
     </div>
 
     <div class="timeline-item">
-      <div class="timeline-time">9:00 PM</div>
+      <div class="timeline-time"> </div>
       <div class="timeline-title">Cena</div>
-      <div class="timeline-desc">Servicio de banquete</div>
+      <div class="timeline-desc"> </div>
     </div>
 
+
     <div class="timeline-item">
-      <div class="timeline-time">10:30 PM</div>
-      <div class="timeline-title">Fiesta</div>
-      <div class="timeline-desc">Baile y celebración</div>
+      <div class="timeline-time"> </div>
+      <div class="timeline-title">Baile</div>
+      <div class="timeline-desc"> </div>
     </div>
 
   </div>
@@ -1965,11 +1991,13 @@ video{
 
   <section class="section">
   <h2>Código de vestimenta</h2>
-  <p>Divinas y guapos</p>
+  <p>¡Guapos y divinas!</p>
 
   <div class="dresscode-img">
     <img src="vestimenta.png" alt="Código de vestimenta">
+    <h6>Se reserva el color azul para la quinceañera</h6>
   </div>
+    
 </section>
 <div class="sep"></div>
   
@@ -1983,12 +2011,7 @@ video{
       <input type="text" id="guestName" placeholder="Escríbelo aquí">
     </div>
 
-    <div class="field">
-  <label>¿Cuántas personas asistirán?</label>
-  <select id="guestCount" data-pases="6">
-    <option value="">Selecciona una opción</option>
-  </select>
-</div>
+
 
 
     <div class="rsvp-buttons">
@@ -2008,13 +2031,20 @@ video{
   
   
 <section class="section">
-  <h2>Mesa de regalos</h2>
-  <p>Liverpool – Evento #123456</p>
-  <p>Transferencia: 1234 5678 9012</p>
+  <h2>Mesa de Regalos</h2>
+    <H6>Mi mejor regalo es compartir este día especial contigo! Si es tu deseo otorgarme un presente sugiero las siguientes opciones</H6>
+  <p>Lluvia de sobres</p>
+    <div class="gift-img">
+    <img src="sobre.png" alt="Sobre">
+  </div>
+  
+  <p>regalo a tu elección</p>  
+  <div class="gift-img">
+    <img src="regalo.png" alt="Mesa de regalos">
+  </div>
 </section>
 
-<div class="sep"></div>
-
+  <div class="sep"></div>
 
 
 
@@ -2022,11 +2052,10 @@ video{
 <section class="section">
   <h2>Agenda este momento</h2>
 
-  <div class="utilities">
-    <a class="btn" href="#" onclick="addToCalendar()">
-      Agregar al calendario
-    </a>
-
+ <div class="utilities">
+  <a class="btn" href="#" onclick="addToCalendar(); return false;">
+    Agregar al calendario
+  </a>
     <a class="btn" href="#" id="verCuenta">
 
       Ver cuenta regresiva
@@ -2048,14 +2077,14 @@ video{
     ¿Tienes tu evento y no tienes invitaciones?
   </p>
 
-  <a class="marca-cta" 
-     href="https://wa.me/525550591264" 
-     target="_blank">
-     Da click aquí
-  </a>
+<a class="marca-cta" 
+   href="https://wa.me/525550591264?text=¡Hola!%20Quiero%20información%20de%20la%20invitación" 
+   target="_blank">
+   Da click aquí
+</a>
 </div>
 
-<div class="sep"></div>
+<div class="marca-footer">
   
 <div id="lightbox">
 
@@ -2394,8 +2423,8 @@ toTopBtn.addEventListener('click', () => {
 // ================================
 
 // ⚠️ CAMBIA ESTA FECHA
-const EVENT_DATE = new Date("2026-04-25T17:00:00"); // YYYY-MM-DDTHH:MM INICIO
-const EVENT_END = "2026-04-25T23:59:59"; // fin
+const EVENT_DATE = new Date("2026-05-23T18:00:00"); // YYYY-MM-DDTHH:MM INICIO
+const EVENT_END = "2026-05-23T23:59:59"; // fin
 const fechaTexto = document.getElementById("fechaEvento");
 
 if (fechaTexto) {
@@ -2477,9 +2506,9 @@ function scrollToCountdown() {
 
 function addToCalendar() {
 
-  const titulo = "XV años Michelle";
+  const titulo = "XV años Maria Jose";
   const detalles = "Acompáñame a celebrar mis XV";
-  const lugar = "Salón de eventos Los Nogales";
+  const lugar = "Salón Jardin La Cruz";
 
   const startDate = EVENT_DATE;
   const endDate = new Date(EVENT_END); 
@@ -2493,6 +2522,8 @@ function addToCalendar() {
     const icsContent =
 `BEGIN:VCALENDAR
 VERSION:2.0
+PRODID:-//DigitalInvita//ES
+CALSCALE:GREGORIAN
 BEGIN:VEVENT
 DTSTART:${formatICS(startDate)}
 DTEND:${formatICS(endDate)}
@@ -2502,15 +2533,8 @@ LOCATION:${lugar}
 END:VEVENT
 END:VCALENDAR`;
 
-    const blob = new Blob([icsContent], { type: "text/calendar" });
-    const url = URL.createObjectURL(blob);
-
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "evento.ics";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+    const url = "data:text/calendar;charset=utf8," + encodeURIComponent(icsContent);
+    window.location.href = url;
 
   } else {
     const start = startDate.toISOString().replace(/[-:]/g, "").split(".")[0];
@@ -2544,12 +2568,9 @@ END:VCALENDAR`;
 }
 
 // Ejecutar al cargar la página
-actualizarOpciones();
- 
-   function sendConfirmation(attending) {
+function sendConfirmation(attending) {
 
   const name = document.getElementById("guestName").value.trim();
-  const count = document.getElementById("guestCount").value;
 
   if (!name) {
     alert("Por favor escribe tu nombre ✨");
@@ -2560,23 +2581,17 @@ actualizarOpciones();
 
   if (attending) {
 
-    if (!count) {
-      alert("Selecciona cuántas personas asistirán ✨");
-      return;
-    }
-
     message = `✨ Confirmación de asistencia ✨
 
-Con mucha alegría confirmo mi presencia en los XV años de Sofía Montes.
+Con mucha alegría confirmo mi presencia en los XV años de Maria Jose.
 
 Nombre: ${name}
-${count}
 
 Será un honor acompañarte en este día tan especial 💖`;
 
   } else {
 
-    message = `✨ XV años Sofía Montes ✨
+    message = `✨Maria Jose✨
 
 Hola, mi nombre es ${name}.
 
@@ -2585,12 +2600,11 @@ pero te deseo un día maravilloso y lleno de felicidad 💐`;
 
   }
 
-  const phone = "525550591264";
+const phone = "5215573951156";
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
   window.open(url, "_blank");
 }
-
    // ===== CENTRAR CUENTA REGRESIVA =====
 const verCuenta = document.getElementById("verCuenta");
 const countdownSection = document.getElementById("countdown-section");
