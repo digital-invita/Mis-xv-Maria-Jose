@@ -284,12 +284,12 @@ width: max-content;
   /* GLASS · usando tus valores (ajuste fino) */
  background: linear-gradient(
   135deg,
-  rgba(255,255,255,0.04),
-  rgba(255,255,255,0.01)
+rgba(255,255,255,0.12),
+rgba(255,255,255,0.06)
 );
 
-backdrop-filter: blur(18px);
--webkit-backdrop-filter: blur(18px);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
 
  /* ===== FIX COUNTDOWN WIDTH EN PC PHONE MODE ===== */
 .phone-mode .section{
@@ -332,9 +332,21 @@ backdrop-filter: blur(18px);
   opacity: 1;
   transform: none;
 }
-.section h2 { font-size: 2rem; margin-bottom: 12px; }
-.section p { font-size: 1.25rem; }
+.section h2 { 
+  font-size: 2rem; 
+  margin-bottom: 12px; 
+  color: #ffffff;
+}
 
+.section p { 
+  font-size: 1.25rem; 
+  color: #f5f5f5;
+}
+
+.section h2,
+.section p{
+  text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+}
 /* SEPARADORES CORREGIDOS */
 .sep {
   height: 3px;
