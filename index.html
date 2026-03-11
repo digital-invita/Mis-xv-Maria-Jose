@@ -27,6 +27,7 @@
   --gold-text: linear-gradient(135deg, #f6d365, #fda085, #d4af37, #fff1a8);
   --gold-btn: linear-gradient(135deg, #fff1a8 0%, #f6d365 25%, #d4af37 50%, #f6d365 75%, #fff1a8 100%);
   --text-light: #f4f1f7;
+  --text-dark: #1f2a36;
 }
 
 
@@ -332,22 +333,19 @@ backdrop-filter: blur(20px);
   opacity: 1;
   transform: none;
 }
-.section h2 
-.section h6{ 
-  font-size: 2rem; 
-  margin-bottom: 12px; 
-  color: #1f2a36;
-}
-
-.section p { 
-  font-size: 1.25rem; 
-  color: #2f3e4f;
-}
-
 .section h2,
 .section h6,
-.section p{
-  text-shadow: none;
+.section p {
+  color: var(--text-dark);
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.section p {
+  font-size: 1.25rem;
 }
 /* SEPARADORES CORREGIDOS */
 .sep {
@@ -1933,7 +1931,7 @@ video{
   <p>16:00 hrs</p>
  <div class="dresscode-img">
     <img src="recepcion.png" alt="Código de vestimenta">
- 
+ </div>
 <h6>La recepción se llevará a cabo en la misma ubicación que la ceremonia.</h6>
 </section>
 
