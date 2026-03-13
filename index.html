@@ -2,65 +2,87 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Invitación en proceso</title>
 
 <style>
 
-body{
-  margin:0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg,#8b1e2d,#3a0b13);
-  color:white;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  height:100vh;
-  text-align:center;
+*{
+box-sizing:border-box;
 }
 
-.box{
-  background: rgba(0,0,0,0.35);
-  padding:40px;
-  border-radius:15px;
-  max-width:500px;
+body{
+margin:0;
+font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+background:linear-gradient(135deg,#8b1e2d,#3a0b13);
+display:flex;
+align-items:center;
+justify-content:center;
+min-height:100vh;
+padding:20px;
+}
+
+.card{
+background:white;
+max-width:420px;
+width:100%;
+border-radius:28px;
+padding:35px 28px;
+text-align:center;
+box-shadow:0 20px 40px rgba(0,0,0,0.25);
+}
+
+.icon{
+font-size:44px;
+margin-bottom:12px;
 }
 
 h1{
-  margin-bottom:15px;
+margin:0 0 10px 0;
+font-size:22px;
+color:#111;
 }
 
 p{
-  opacity:0.9;
-  margin-bottom:25px;
+color:#666;
+line-height:1.5;
+font-size:15px;
+margin-bottom:28px;
 }
 
 .botones{
-  display:flex;
-  gap:15px;
-  justify-content:center;
-  flex-wrap:wrap;
+display:flex;
+flex-direction:column;
+gap:12px;
 }
 
 .btn{
-  padding:12px 22px;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:bold;
-  transition:0.3s;
+padding:14px;
+border-radius:14px;
+text-decoration:none;
+font-weight:600;
+font-size:16px;
+display:block;
 }
 
 .btn-facebook{
-  background:#1877f2;
-  color:white;
+background:#1877f2;
+color:white;
 }
 
 .btn-whatsapp{
-  background:#25D366;
-  color:white;
+background:#25D366;
+color:white;
 }
 
-.btn:hover{
-  transform:scale(1.05);
+.btn:active{
+transform:scale(0.97);
+}
+
+.footer{
+margin-top:22px;
+font-size:12px;
+color:#999;
 }
 
 </style>
@@ -68,25 +90,35 @@ p{
 
 <body>
 
-<div class="box">
+<div class="card">
 
-<h1>Invitación en proceso de activación</h1>
+<div class="icon">📩</div>
+
+<h1>Invitación en proceso</h1>
 
 <p>
-Esta invitación se encuentra en proceso de entrega.
+Esta invitación se encuentra en proceso de activación.
 Muy pronto estará disponible para compartir con los invitados.
 </p>
 
 <div class="botones">
 
-<a class="btn btn-facebook" href="https://www.facebook.com/people/Digital-Invita/61587804296779" target="_blank">
+<a class="btn btn-facebook"
+href="https://www.facebook.com/people/Digital-Invita/61587804296779"
+target="_blank">
 Ver Facebook
 </a>
 
-<a class="btn btn-whatsapp" href="https://wa.me/5215550591264?text=Hola%20me%20interesa%20una%20invitación%20digital" target="_blank">
+<a class="btn btn-whatsapp"
+href="https://wa.me/5215550591264?text=Hola%20me%20interesa%20una%20invitación%20digital"
+target="_blank">
 Quiero contratar invitación
 </a>
 
+</div>
+
+<div class="footer">
+Digital Invita
 </div>
 
 </div>
