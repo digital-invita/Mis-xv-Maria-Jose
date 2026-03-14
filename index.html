@@ -21,6 +21,7 @@ justify-content:center;
 min-height:100vh;
 padding:20px;
 overflow:hidden;
+position:relative;
 }
 
 /* fondo suave estilo iOS */
@@ -34,6 +35,7 @@ background:radial-gradient(circle,#ffffff60,transparent);
 top:-200px;
 left:-200px;
 filter:blur(80px);
+pointer-events:none;
 }
 
 body::after{
@@ -45,11 +47,15 @@ background:radial-gradient(circle,#ffffff50,transparent);
 bottom:-200px;
 right:-200px;
 filter:blur(80px);
+pointer-events:none;
 }
 
 /* tarjeta */
 
 .card{
+
+position:relative;
+z-index:1;
 
 background:rgba(255,255,255,0.65);
 backdrop-filter:blur(18px);
@@ -160,7 +166,7 @@ color:white;
 box-shadow:0 8px 18px rgba(37,211,102,0.35);
 }
 
-/* efecto tap estilo app */
+/* efecto estilo app */
 
 .btn:hover{
 transform:translateY(-2px);
@@ -195,13 +201,13 @@ Muy pronto estará disponible para compartir con los invitados.
 
 <a class="btn btn-facebook"
 href="https://www.facebook.com/people/Digital-Invita/61587804296779"
-target="_blank">
+target="_blank" rel="noopener">
 Ver Facebook
 </a>
 
 <a class="btn btn-whatsapp"
 href="https://wa.me/5215550591264?text=Hola%20me%20interesa%20una%20invitación%20digital"
-target="_blank">
+target="_blank" rel="noopener">
 Quiero contratar invitación
 </a>
 
